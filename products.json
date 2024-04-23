@@ -1,0 +1,86 @@
+[
+    {
+        "id": 1,
+        "name":"ดินสอกด 0.5มม. เขียวลายจุด เพนเทล AX105C-K",
+        "price": 22 ,
+        "image": "image/1.png"
+    },
+
+    {
+        "id": 2,
+        "name":"ดินสอกดข้าง 0.5 มม. ด้ามชมพู เพนเทล PD105C",
+        "price": 45 ,
+        "image": "image/2.png"
+    },
+
+    {
+        "id": 3,
+        "name":"ดินสอกด 0.5 มม. น้ำเงิน เพนเทล PL75-S",
+        "price": 55 ,
+        "image": "image/3.png"
+    },
+
+    {
+        "id": 4,
+        "name":"ดินสอกด 2B 0.5 มม. Faber-Castell 4J5932",
+        "price": 119 ,
+        "image": "image/4.png"
+    },
+
+    {
+        "id": 5,
+        "name":"ปากกาลูกลื่น 0.5 มม. Faber-Castell รุ่น RX5 สีน้ำเงิน",
+        "price": 17 ,
+        "image": "image/5.png"
+    },
+
+    {
+        "id": 6,
+        "name":"ปากกาลูกลื่น 0.7 มม. แดง เจ็ทสตรีม ยูนิ SXN-101-07",
+        "price": 20 ,
+        "image": "image/6.png"
+    },
+
+    {
+        "id": 7,
+        "name":"ปากกาลูกลื่น 0.7มม. แดง Faber-Castell GRIP XF",
+        "price": 19 ,
+        "image": "image/7.png"
+    },
+
+    {
+        "id": 8,
+        "name":"ปากกาลูกลื่น 0.38 มม. จีซอฟท์ HI-GRIP สีน้ำเงิน",
+        "price": 15 ,
+        "image": "image/8.png"
+    },
+
+    {
+        "id": 9,
+        "name":"ไส้ดินสอ HB 0.5 มม. เพนเทล Hi-Polymer C505",
+        "price": 23 ,
+        "image": "image/9.png"
+    },
+
+    {
+        "id": 10,
+        "name":"ไส้ดินสอ HB 0.5มม. รอตริง Tikky Hi-Polymer",
+        "price": 45 ,
+        "image": "image/10.png"
+    },
+
+    {
+        "id": 11,
+        "name":"ปากกาลบคำผิด เพนเทล Fine Point ZL102-WBP 4.2 มล.",
+        "price": 50 ,
+        "image": "image/11.png"
+    },
+
+    {
+        "id": 12,
+        "name":"ยางลบดินสอ เพนเทล Hi-Polymer ZEH-05 ขนาดเล็ก",
+        "price": 18 ,
+        "image": "image/12.png"
+    }
+
+]

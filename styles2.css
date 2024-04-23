@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Athiti:wght@200;300;400;500;600;700&family=Charm:wght@400;700&family=Chonburi&family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&display=swap');
+
+body{
+    margin: 0;
+    font-family: Poppins;
+    font-family: "Charm", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+.container{
+    width: 900px;
+    margin: auto;
+    max-width: 90vw;
+    text-align: center;
+    padding-top: 10px;
+    transition: transform .5s;
+}
+svg{
+    width: 30px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+.icon-cart{
+    position: absolute;
+    top: 20px; /* ตำแหน่งด้านบน */
+    right: 90px; /* ตำแหน่งด้านซ้าย */
+    display: flex;
+    align-items: center;
+}
+.icon-cart span{
+    position: absolute;
+    font-family: "Athiti", sans-serif;
+    background-color: red;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #fff;
+    top: 50%;
+    right: -20px;
+}
+.title{
+    font-size: xx-large;
+}
+.listProduct .item img{
+    width: 90%;
+    filter: drop-shadow(0 50px 20px #0009);
+}
+.listProduct{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.listProduct .item{
+    background-color: #EEEEE6;
+    padding: 20px;
+    border-radius: 20px;
+    margin-left: auto;
+}
+.listProduct .item h5{
+    font-weight: 500;
+    font-size: medium;
+}
+.listProduct .item .price{
+    font-size: medium;
+    text-align: center;
+    margin-top: 10px; 
+    margin-bottom: 5px; 
+}
+.listProduct .item button {
+    background-color: #353432;
+    color: #eee;
+    border: none;
+    padding: 5px 10px;
+    margin-top: auto; 
+    margin-bottom: auto; 
+    border-radius: 20px;
+    display: block;
+    margin: auto; 
+    margin-top: 10px; 
+
+}
+/* cart */
+.cartTab{
+    width: 400px;
+    background-color: #353432;
+    color: #eee;
+    position: fixed;
+    top: 0;
+    right: -400px;
+    bottom: 0;
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+    transition: .5s;
+}
+body.showCart .cartTab{
+    inset: 0 0 0 auto;
+}
+body.showCart .container{
+    transform: translateX(-250px);
+}
+.cartTab h1{
+    padding: 20px;
+    margin: 0;
+    font-weight: 300;
+}
+.cartTab .btn{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.cartTab button{
+    background-color: #E8BC0E;
+    border: none;
+    font-family: "Athiti", sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+}
+.cartTab .close{
+    background-color: #eee;
+}
+.cartTab .listCart .item img{
+    width: 100%;
+}
+.cartTab .listCart .item {
+    display: grid;
+    grid-template-columns: 70px 150px 50px 1fr;
+    gap: 10px; 
+    text-align: center;
+    align-items: center;
+}
+.listCart .quantity span{
+    display: inline-block;
+    width: 27px;
+    height:27px;
+    background-color: #eee;
+    border-radius: 50%;
+    color: #555;
+    cursor: pointer;
+}
+.listCart .quantity span:nth-child(2){
+    background-color: transparent;
+    color: #eee;
+    cursor: auto;
+}
+.listCart .item:nth-child(even){
+    background-color: #eee1;
+}
+.listCart{
+    overflow: auto;
+}
+.listCart::-webkit-scrollbar{
+    width: 0;
+}
+@media only screen and (max-width: 992px) {
+    .listProduct{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+/* mobile */
+@media only screen and (max-width: 768px) {
+    .listProduct{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #f2f2f2;
+    overflow: hidden;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+nav li a:hover {
+    background-color: #ddd;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section {
+    flex: 70%;
+    padding: 20px;
+}
+
+aside {
+    flex: 30%;
+    padding: 20px;
+    background-color: #f2f2f2;
+}
+
+
+/* ปรับแต่งเมนู */
+nav {
+    background-color: #f2f2f2;
+    font-family: "Athiti", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+    overflow: hidden;
+    display: flex; 
+    justify-content: center; 
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav li a {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+nav li a:hover {
+    background-color: #ddd;
+    color: #333;
+}
+
+p1 {
+    text-align: center;
+    font-family: "Athiti", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 30px;
+    margin-top: 40px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:20px; 
+}
+
+p2 {
+    text-align: center;
+    font-family: "Athiti", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 30px;
+    margin-top: 40px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:20px;
+}
+.item{
+    font-family: "Athiti", sans-serif;
+}
+
+.addCart{
+    font-family: "Athiti", sans-serif;
+}
+h5{
+    font-family: "Athiti", sans-serif;
+    text-align: center;
+}
+p3{
+    text-align: center;
+    font-family: "Athiti", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    margin-top: 40px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:20px;
+}
+
+h1{
+    font-family: "Athiti", sans-serif;
+    text-align: center;
+}
+.container1 {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    font-family: "Athiti", sans-serif;
+
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.box {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+
